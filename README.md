@@ -45,6 +45,7 @@ Clipboard text and freeform input are treated as untrusted, sanitized, explicitl
 - `ui`: desktop application layer
 
 See [docs/architecture.md](/home/r345/workspace/multipass/docs/architecture.md) for the design notes.
+See [docs/roadmap.md](/home/r345/workspace/multipass/docs/roadmap.md) for the product and UX direction.
 
 ## Setup
 
@@ -124,6 +125,13 @@ Run the full suite with:
 ```bash
 uv run --project . python -m pytest
 ```
+
+## Open Source Project Docs
+
+- [CONTRIBUTING.md](/home/r345/workspace/multipass/CONTRIBUTING.md)
+- [SECURITY.md](/home/r345/workspace/multipass/SECURITY.md)
+- [docs/architecture.md](/home/r345/workspace/multipass/docs/architecture.md)
+- [docs/roadmap.md](/home/r345/workspace/multipass/docs/roadmap.md)
 
 ## License
 
