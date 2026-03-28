@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multipass"
+version = "0.1.0"
+description = "Clipboard and chat orchestration with prompt security controls."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "boto3>=1.42.78",
+    "flet>=0.83.0",
+]
+
+[project.scripts]
+multipass-desktop = "multipass.ui.desktop_app:launch"
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
